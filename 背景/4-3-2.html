@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>background-origin使用方法</title>
+	<style type="text/css">
+		div{
+			width: 1200px;
+			height: 700px;
+			border:30px dashed rgba(25,25,25,.5);
+			background:orange url(images/content.jpg) no-repeat;
+			padding: 30px;
+			margin: 20px;
+		}
+		.border-box{
+			-webkit-background-clip:border-box;
+			-moz-background-clip:border-box;
+			-ms-background-clip:border-box;
+			-o-background-clip:border-box;
+			background-clip:border-box;
+		}
+		.padding-box{
+			-webkit-background-clip:padding-box;
+			-moz-background-clip:padding-box;
+			-ms-background-clip:padding-box;
+			-o-background-clip:padding-box;
+			background-clip:padding-box;
+		}
+		.content-box{
+			-webkit-background-clip:content-box;
+			-moz-background-clip:content-box;
+			-ms-background-clip:content-box;
+			-o-background-clip:content-box;
+			background-clip:content-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="border-box"></div>
+	<div class="padding-box"></div>
+	<div class="content-box"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+@media print{
+	.parent1{
+		color:#f00;
+		@at-root .child1 {
+			width:200px;
+		}
+	}
+}
+
+@media print{
+	.parent2{
+		color:#f00;
+
+		@at-root (without:media){
+			.child2{
+				width:200px;
+			}
+		}
+	}
+}
+
+
+@media print{
+	.parent3{
+		color:#f00;
+
+		@at-root (without:all){
+			.child3{
+				width:200px;
+			}
+		}
+	}
+}

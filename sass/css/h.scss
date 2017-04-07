@@ -1,0 +1,6 @@
+
+.child {
+	@at-root .parent &{
+		color:#f00;
+	}
+}

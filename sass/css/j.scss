@@ -1,0 +1,13 @@
+
+@mixin opacity($opacity:50){
+	opacity:$opacity / 100;
+	filter:alpha(opacity=$opacity);
+}
+
+.opacity{
+	@include opacity;
+}
+
+.opacity-80{
+	@include opacity(80);
+}

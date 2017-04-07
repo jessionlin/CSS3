@@ -1,0 +1,32 @@
+$lte7:true;
+%ir{
+	color:transparent;
+	text-shadow:none;
+	background-color:transparent;
+	border:0;
+}
+%clearfix{
+  @if $lte7 {
+    *zoom: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    font: 0/0 a;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+#header{
+	h1{
+		@extend %ir;
+		width:300px;
+	}
+}
+
+.ir{
+	@extend %ir;
+}

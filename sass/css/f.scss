@@ -1,0 +1,26 @@
+
+.parent-1{
+	color:#f00;
+	.child{
+		width:100px;
+	}
+}
+
+.parint-2{
+	color:#fff;
+	@at-root .child{
+		width:200px;
+	}
+}
+
+.parent-3{
+	background:#f00;
+	@at-root {
+		.child1 {
+			width:300px;
+		}
+		.child2{
+			width:400px;
+		}
+	}
+}

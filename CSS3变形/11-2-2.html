@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{margin:0;padding: 0;}
+		div{
+			margin: 15px auto;
+		}
+		div img{
+			position: absolute;
+			margin: 5px;
+		}
+		div:nth-of-type(2){
+			position: relative;
+			margin-left: 600px;
+		}
+		div img:nth-child(1){
+			opacity: .5;
+			z-index: 1;
+			transform: scale(1.2);
+		}
+		div img:nth-child(2){
+			opacity: .6;
+			z-index: 2;
+			transform: scale(1.1);
+		}
+		div img:nth-child(3){
+			opacity: .7;
+			z-index: 3;
+			transform: scale(.9);
+		}
+		div img:nth-child(4){
+			opacity: .8;
+			z-index: 4;
+			transform: scale(.8);
+		}
+		div img:nth-child(5){
+			z-index: 5;
+			transform: scale(.6);
+		}
+		div:nth-of-type(2) img{
+			transform-origin: right;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="1.jpg">
+		<img src="1.jpg">
+		<img src="1.jpg">
+		<img src="1.jpg">
+		<img src="1.jpg">
+	</div>
+	<div>
+		<img src="1.jpg">
+		<img src="1.jpg">
+		<img src="1.jpg">
+		<img src="1.jpg">
+		<img src="1.jpg">
+	</div>
+</body>
+</html>

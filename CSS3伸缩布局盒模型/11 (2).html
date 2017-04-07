@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body{margin: 0;padding: 0}
+		.flex-container{
+			margin: 20px auto;
+			width: 800px;
+			height: 800px;
+			padding: 5px;
+			display: flex;
+			display: -webkit-flex;
+			background: hsla(120,10%,20%,.2);
+			-webkit-flex-flow:column wrap;
+			flex-flow:column wrap;
+			-webkit-justify-content:start;
+			justify-content:start;
+
+		}
+		header,
+		nav,
+		article,
+		aside,
+		footer{
+			display: block;
+		}
+		.header{
+			min-width: 100%;
+			min-height: 120px;
+			padding: 0;
+			margin: 0;
+			background: hsla(120,30%,40%,.2);
+			order: 1;
+			-webkit-order:1;
+			text-align: center;
+			-webkit-flex:1;
+			flex: 1;
+			word-break: break-all;
+		}
+		.middle{
+			margin: 10px auto; 
+			display: flex;
+			display: -webkit-flex;
+			width: 100%;
+			background:hsla(120,50%,60%,.2);
+			text-align: center;
+			-webkit-justify-content:start;
+			justify-content: start;
+			order:2;
+			max-height: 540px;
+			-webkit-order:2;
+			-webkit-flex:3;
+			flex: 3;
+		}
+		.footer{
+			min-width: 100%;
+			min-height: 120px;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			background: hsla(120,70%,80%,.5);
+			order: 3;
+			-webkit-order:3;
+			-webkit-flex:1;
+			flex: 1;
+			word-break: break-all;
+		}
+		nav{
+			-webkit-order:1;
+			order: 1;
+			width: 200px;
+			height: 100%;
+			background:hsla(120,50%,60%,.5);
+			word-break: break-all;
+		}
+		article{
+			-webkit-flex:1;
+			flex: 1;
+			-webkit-order:2;
+			order: 2;
+			margin-left: 20px;
+			margin-right: 20px;
+			height: 100%;
+			background:hsla(120,50%,60%,.9);
+			word-break: break-all;
+		}
+		aside{
+			-webkit-order:3;
+			order: 3;
+			width: 200px;
+			height: 100%;
+			background:hsla(120,50%,60%,.5);
+			word-break: break-all;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="header">header</div>
+		<div class="middle">
+			<nav class="nav">nav</nav>
+			<article id="article">article</article>
+			<aside id="aside">aside</aside>
+		</div>
+		<footer class="footer">footer</footer>
+	</div>
+</body3
+</html>

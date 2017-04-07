@@ -1,0 +1,11 @@
+
+@for $i from 1 through 3 {
+	.item-#{$i} {width:2em * $i}
+}
+
+$animal-list:puma, sea-slug, egret, salamander;
+@each $animal in $animal-list{
+.#{$animal}-icon{
+		background-image:url('/images/#{$animal}.png');
+	}
+}
